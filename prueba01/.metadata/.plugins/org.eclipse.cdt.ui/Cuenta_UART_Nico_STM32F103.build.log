@@ -1,0 +1,10 @@
+10:07:51 **** Incremental Build of configuration Debug for project Cuenta_UART_Nico_STM32F103 ****
+make -j4 all 
+arm-none-eabi-size   Cuenta_UART_Nico_STM32F103.elf 
+   text	   data	    bss	    dec	    hex	filename
+   8652	    488	   1640	  10780	   2a1c	Cuenta_UART_Nico_STM32F103.elf
+Finished building: default.size.stdout
+ 
+
+10:07:51 Build Finished. 0 errors, 0 warnings. (took 604ms)
+

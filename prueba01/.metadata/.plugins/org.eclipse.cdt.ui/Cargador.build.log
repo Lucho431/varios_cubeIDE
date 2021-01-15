@@ -1,0 +1,34 @@
+00:32:30 **** Build of configuration Debug for project Cargador ****
+make -j4 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F103xB -DDEBUG -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc "../Src/stm32f1xx_hal_msp.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F103xB -DDEBUG -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/stm32f1xx_hal_msp.d" -MT"Src/stm32f1xx_hal_msp.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/stm32f1xx_hal_msp.o"
+arm-none-eabi-gcc "../Src/stm32f1xx_it.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F103xB -DDEBUG -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/stm32f1xx_it.d" -MT"Src/stm32f1xx_it.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/stm32f1xx_it.o"
+arm-none-eabi-gcc "../Src/system_stm32f1xx.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F103xB -DDEBUG -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/system_stm32f1xx.d" -MT"Src/system_stm32f1xx.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/system_stm32f1xx.o"
+In file included from ../Src/stm32f1xx_hal_msp.c:23:0:
+../Inc/main.h:31:10: fatal error: stm32f1xx_hal.h: No such file or directory
+ #include "stm32f1xx_hal.h"
+          ^~~~~~~~~~~~~~~~~
+In file included from ../Src/main.c:22:0:
+../Inc/main.h:31:10: fatal error: stm32f1xx_hal.h: No such file or directory
+ #include "stm32f1xx_hal.h"
+          ^~~~~~~~~~~~~~~~~
+In file included from ../Src/stm32f1xx_it.c:22:0:
+../Inc/main.h:31:10: fatal error: stm32f1xx_hal.h: No such file or directory
+ #include "stm32f1xx_hal.h"
+          ^~~~~~~~~~~~~~~~~
+../Src/system_stm32f1xx.c:59:10: fatal error: stm32f1xx.h: No such file or directory
+ #include "stm32f1xx.h"
+          ^~~~~~~~~~~~~
+compilation terminated.
+compilation terminated.
+compilation terminated.
+compilation terminated.
+make: *** [Src/subdir.mk:33: Src/main.o] Error 1
+make: *** Waiting for unfinished jobs....
+make: *** [Src/subdir.mk:35: Src/stm32f1xx_hal_msp.o] Error 1
+make: *** [Src/subdir.mk:43: Src/system_stm32f1xx.o] Error 1
+make: *** [Src/subdir.mk:37: Src/stm32f1xx_it.o] Error 1
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+
+00:32:32 Build Failed. 9 errors, 0 warnings. (took 1s.685ms)
+

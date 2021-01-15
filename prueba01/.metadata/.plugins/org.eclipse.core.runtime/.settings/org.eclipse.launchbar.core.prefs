@@ -1,0 +1,13 @@
+LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/arch=x86_64
+LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/name=Local
+LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/os=linux
+configDescList=org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:blink_STM32F103 Debug,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:Cuenta_UART_Nico_STM32F103 Debug,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:Cargador_linux_STM32IDE Debug,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:blink_4leds_STM32F407 Debug
+eclipse.preferences.version=1
+org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:Cargador.elf\ (1)/activeLaunchMode=debug
+org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:Cargador.elf\ (1)/activeLaunchTarget=null\:---
+org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:Cargador_linux_STM32IDE\ Debug/activeLaunchMode=debug
+org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:Cargador_linux_STM32IDE\ Debug/activeLaunchTarget=null\:---
+org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:Cuenta_UART_Nico_STM32F103\ Debug/activeLaunchMode=debug
+org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:Cuenta_UART_Nico_STM32F103\ Debug/activeLaunchTarget=null\:---
+org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:blink_STM32F103\ Debug/activeLaunchMode=debug
+org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:blink_STM32F103\ Debug/activeLaunchTarget=null\:---

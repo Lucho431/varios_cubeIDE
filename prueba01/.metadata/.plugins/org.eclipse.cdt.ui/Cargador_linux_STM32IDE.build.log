@@ -1,0 +1,10 @@
+02:24:01 **** Incremental Build of configuration Debug for project Cargador_linux_STM32IDE ****
+make -j4 all 
+arm-none-eabi-size   Cargador_linux_STM32IDE.elf 
+   text	   data	    bss	    dec	    hex	filename
+   8720	     24	   1640	  10384	   2890	Cargador_linux_STM32IDE.elf
+Finished building: default.size.stdout
+ 
+
+02:24:02 Build Finished. 0 errors, 0 warnings. (took 1s.181ms)
+

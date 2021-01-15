@@ -1,0 +1,20 @@
+22:05:45 **** Build of configuration Debug for project mod_simon_STM32F407 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DDEBUG -DSTM32F407xx -c -I../Drivers/CMSIS/Include -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Core/Inc -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "mod_simon_STM32F407.elf" @"objects.list"   -mcpu=cortex-m4 -T"/home/lucho/STM32CubeIDE/workspaces/KTNE_ws/mod_simon_STM32F407/STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="mod_simon_STM32F407.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: mod_simon_STM32F407.elf
+ 
+arm-none-eabi-objdump -h -S  mod_simon_STM32F407.elf  > "mod_simon_STM32F407.list"
+arm-none-eabi-objcopy  -O binary  mod_simon_STM32F407.elf  "mod_simon_STM32F407.bin"
+arm-none-eabi-size   mod_simon_STM32F407.elf 
+Finished building: mod_simon_STM32F407.bin
+ 
+   text	   data	    bss	    dec	    hex	filename
+  10668	     20	   1724	  12412	   307c	mod_simon_STM32F407.elf
+Finished building: default.size.stdout
+ 
+Finished building: mod_simon_STM32F407.list
+ 
+
+22:05:52 Build Finished. 0 errors, 0 warnings. (took 7s.581ms)
+

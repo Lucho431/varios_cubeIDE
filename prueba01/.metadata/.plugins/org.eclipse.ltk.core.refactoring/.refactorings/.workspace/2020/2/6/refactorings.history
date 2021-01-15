@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Delete resource &apos;SD_WAV_STM32F429&apos;" deleteContents="true" description="Delete resource &apos;SD_WAV_STM32F429&apos;" element1="/SD_WAV_STM32F429" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1581199336551"/>
+</session>
