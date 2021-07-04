@@ -46,8 +46,8 @@ OBJCOPY_BIN += \
 all: 74HC165_SPI_STM32F103.elf secondary-outputs
 
 # Tool invocations
-74HC165_SPI_STM32F103.elf: $(OBJS) $(USER_OBJS) /home/lucho/STM32CubeIDE/01_prueba/74HC165_SPI_STM32F103/STM32F103C8TX_FLASH.ld
-	arm-none-eabi-gcc -o "74HC165_SPI_STM32F103.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m3 -T"/home/lucho/STM32CubeIDE/01_prueba/74HC165_SPI_STM32F103/STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="74HC165_SPI_STM32F103.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+74HC165_SPI_STM32F103.elf: $(OBJS) $(USER_OBJS) C:\Users\Usuario\STM32CubeIDE\rbt_ws\74HC165_SPI_STM32F103\STM32F103C8TX_FLASH.ld
+	arm-none-eabi-gcc -o "74HC165_SPI_STM32F103.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m3 -T"C:\Users\Usuario\STM32CubeIDE\rbt_ws\74HC165_SPI_STM32F103\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="74HC165_SPI_STM32F103.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
 	@echo 'Finished building target: $@'
 	@echo ' '
 
